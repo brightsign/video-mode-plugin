@@ -3,8 +3,9 @@ video-mode-plugin
 
 A BrightSign plugin that changes the video resolution, frame rate, color space and color depth.
 
-SetSingleScreenVideoMode.brs for non-series 5 single screen players.
-SetMultiScreensVideoMode.brs for series 5 multi screens players.
+SetSingleScreenVideoMode.brs is used for series 4 and below.
+SetMultiScreensVideoMode.brs is used for series 5 players.
+videomode_plugin.brs is a alternative example that you can configure videoMode for series 4 and below via Plugin Message Usage. 
 
 # VideoMode Plugin Usage
 

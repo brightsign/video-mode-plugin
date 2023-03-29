@@ -1,13 +1,13 @@
 ' Multi Screens VideoMode Plugin Example
 ' Plugin function name - setvideomode
-' Plugin return type - As Array: For series5 players, it is plugin's responsibility to 
+' Plugin return type - As Array: see below example, it is plugin's responsibility to 
 ' return the same format as GetScreenModes() returns. Then the presentation autorun will
 ' pick up your ScreenConfigList and set video modes for your screens.
-' Note: BrightAuthor:connected always sets :fullres on all of the videomodes for the XC5
+
 Function setvideomode(videoModeInputs, bsp)
 
 	print "setvideomode_ForMultiScreens"
-
+  ' See details regarding multiScreen configuration - [MultiScreen VideoMode Configuration](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration)
 	vm = CreateObject("roVideoMode")
 	sm = vm.GetScreenModes()
 
