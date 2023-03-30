@@ -9,12 +9,14 @@ videomode_plugin.brs is a alternative example that you can configure videoMode f
 
 # VideoMode Plugin Usage
 
-Add SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs to BrightAuthor or BrightAuthor:Connected (Presentation Settings > Support Content > Video Mode Plugin)
+1. Update SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs with your expected screens settings
+2. Add SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs to BrightAuthor or BrightAuthor:Connected (Presentation Settings > Support Content > Video Mode Plugin)
 
 # Plugin Message Usage
 
-1. Add videomode_plugin.brs to BrightAuthor or BrightAuthor:Connected (File > Presentation Properties > Autorun)
-2. Add a plugin message wherever you want to send it: Advanced tab > Add Command > Send > Send Plugin Message, pick the plugin you added in step 1, and add the text of the the plugin message e.g. "brightsign!videomode!1920x1080x60i!444!10bit" (format below)
+1. Update videomode_plugin.brs with your expected screens settings
+2. Add videomode_plugin.brs to BrightAuthor or BrightAuthor:Connected (File > Presentation Properties > Autorun)
+3. Add a plugin message wherever you want to send it: Advanced tab > Add Command > Send > Send Plugin Message, pick the plugin you added in step 1, and add the text of the the plugin message e.g. "brightsign!videomode!1920x1080x60i!444!10bit" (format below)
 
 The format of command is a set of values separated by exclamation characters:
 

@@ -7,7 +7,7 @@
 Function setvideomode(videoModeInputs, bsp)
 
 	print "setvideomode_ForMultiScreens"
-  ' See details regarding multiScreen configuration - [MultiScreen VideoMode Configuration](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration)
+	' See details regarding multiScreen configuration - https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration
 	vm = CreateObject("roVideoMode")
 	sm = vm.GetScreenModes()
 
