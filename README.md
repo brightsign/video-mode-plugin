@@ -1,12 +1,22 @@
 video-mode-plugin
 =================
 
-A BrightAuthor plugin that changes the video resolution, frame rate, color space and color depth.
+A BrightSign plugin that changes the video resolution, frame rate, color space and color depth.
 
-# Usage
+SetSingleScreenVideoMode.brs is used for series 4 and below.
+SetMultiScreensVideoMode.brs is used for series 5 players.
+videomode_plugin.brs is a alternative example that you can configure videoMode for series 4 and below via Plugin Message Usage. 
 
-1. Add videomode_plugin.brs to BrightAuthor (File > Presentation Properties > Autorun)
-1. Add a plugin message wherever you want to send it: Advanced tab > Add Command > Send > Send Plugin Message, pick the plugin you added in step 1, and add the text of the the plugin message e.g. "brightsign!videomode!1920x1080x60i!444!10bit" (format below)
+# VideoMode Plugin Usage
+
+1. Update SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs with your expected screens settings
+2. Add SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs to BrightAuthor or BrightAuthor:Connected (Presentation Settings > Support Content > Video Mode Plugin)
+
+# Plugin Message Usage
+
+1. Update videomode_plugin.brs with your expected screens settings
+2. Add videomode_plugin.brs to BrightAuthor or BrightAuthor:Connected (File > Presentation Properties > Autorun)
+3. Add a plugin message wherever you want to send it: Advanced tab > Add Command > Send > Send Plugin Message, pick the plugin you added in step 1, and add the text of the the plugin message e.g. "brightsign!videomode!1920x1080x60i!444!10bit" (format below)
 
 The format of command is a set of values separated by exclamation characters:
 
@@ -14,7 +24,12 @@ The format of command is a set of values separated by exclamation characters:
 
 See below for valid values for these parameters.
 
-# Valid Resolution and Frame Rates
+# Supporting Resources
+Confluence: 
+1. [MultiScreen VideoMode Configuration](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration)
+2. [Supported Video Modes](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370676833/Supported+Video+Modes)
+
+# Examples of Valid Resolution and Frame Rates
 
 *Note*: this is not a complete list, and your BrightSign player may not support all these modes. Please refer to the documentation and the Video tab of your BrightSign player to see what is supported.
 
