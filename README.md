@@ -1,111 +1,23 @@
-video-mode-plugin
-=================
+# video-mode-plugin
+The Video Mode Plugin feature is designed for allowing customers to set the BrightSign videoMode.
 
-A BrightSign plugin that changes the video resolution, frame rate, color space and color depth.
+A BrightSign Video Mode Plugin changes the video resolution, frame rate, color space and color depth.
 
-SetSingleScreenVideoMode.brs is used for series 4 and below.
-SetMultiScreensVideoMode.brs is used for series 5 players.
-videomode_plugin.brs is a alternative example that you can configure videoMode for series 4 and below via Plugin Message Usage. 
+This repository contains 2 different plugins:
 
-# VideoMode Plugin Usage
+* SetSingleScreenVideoMode.brs is used for single output [series 4 players and below].
+* SetMultiScreensVideoMode.brs is used for multi output [series 5 players].
+
+## Video Mode Plugin Usage
 
 1. Update SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs with your expected screens settings
 2. Add SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs to BrightAuthor or BrightAuthor:Connected (Presentation Settings > Support Content > Video Mode Plugin)
 
-# Plugin Message Usage
 
-1. Update videomode_plugin.brs with your expected screens settings
-2. Add videomode_plugin.brs to BrightAuthor or BrightAuthor:Connected (File > Presentation Properties > Autorun)
-3. Add a plugin message wherever you want to send it: Advanced tab > Add Command > Send > Send Plugin Message, pick the plugin you added in step 1, and add the text of the the plugin message e.g. "brightsign!videomode!1920x1080x60i!444!10bit" (format below)
-
-The format of command is a set of values separated by exclamation characters:
-
-    brightsign!videomode!<resolution/frame rate>!<color space>!<color depth>
-
-See below for valid values for these parameters.
-
-# Supporting Resources
+## Supporting Resources
 Confluence: 
 1. [MultiScreen VideoMode Configuration](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration)
 2. [Supported Video Modes](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370676833/Supported+Video+Modes)
 
-# Examples of Valid Resolution and Frame Rates
-
-*Note*: this is not a complete list, and your BrightSign player may not support all these modes. Please refer to the documentation and the Video tab of your BrightSign player to see what is supported.
-
-- 1024x768x60p
-- 1024x768x75p
-- 1280x1024x60p
-- 1280x1024x75p
-- 1280x720x50p
-- 1280x720x59.94p
-- 1280x720x60p
-- 1280x768x60p
-- 1280x800x60p
-- 1280x800x75p
-- 1280x960x60p
-- 1360x768x60p
-- 1400x1050x60p
-- 1400x1050x75p
-- 1440x900x60p
-- 1440x900x75p
-- 1600x1200x60p
-- 1680x1050x60p
-- 1920x1080x24p
-- 1920x1080x25p
-- 1920x1080x29.97p
-- 1920x1080x30p
-- 1920x1080x50i
-- 1920x1080x50p
-- 1920x1080x59.94i
-- 1920x1080x59.94p
-- 1920x1080x60i
-- 1920x1080x60p
-- 1920x1200x60p
-- 3840x2160x24p
-- 3840x2160x25p
-- 3840x2160x29.97p
-- 3840x2160x30p
-- 3840x2160x50p
-- 3840x2160x59.94p
-- 3840x2160x60p
-- 4096x2160x24p
-- 4096x2160x25p
-- 4096x2160x29.97p
-- 4096x2160x30p
-- 4096x2160x50p
-- 4096x2160x59.94p
-- 4096x2160x60p
-- 640x480x60p
-- 640x480x60p-yu
-- 720x480x59.94p
-- 720x480x60p
-- 720x576x50p
-- 800x600x60p
-- 800x600x75p
-- 960x960x60p
-- ntsc-component
-- ntsc-m
-- ntsc-m-jpn
-- pal-bg
-- pal-component
-- pal-i
-- pal-m
-- pal-n
-- pal-nc
-- secam
- 
-# Valid Color Spaces
-
-- 420
-- 422
-- 444
-- rgb
-
-# Valid Color Depths
-
-- 8bit
-- 10bit
-- 12bit
-- 16bit
-
+Alternative:
+1. You can also use Script Plugin and Plugin message feature to achieve setting videoMode, please see details: [BrightAuthor-Plugins/Set-Video-Mode] (https://github.com/brightsign/BrightAuthor-Plugins/tree/master/Set-Video-Mode)
