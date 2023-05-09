@@ -1,7 +1,7 @@
 # video-mode-plugin
-The Video Mode Plugin feature is designed for allowing customers to set the BrightSign videoMode.
+The Video Mode Plugin feature is designed for allowing customers to set the BrightSign videoMode. A BrightSign Video Mode Plugin changes the video resolution, frame rate, color space and color depth. 
 
-A BrightSign Video Mode Plugin changes the video resolution, frame rate, color space and color depth.
+This can be useful if you need to display content at a resolution that is non-standard or beyond the current list of video modes in BrightAuthor:connected or BrightAuthor. By using a Video Mode Plugin, you can customize your BrightSign player's video settings to match the requirements of your content. This ensures that your content is displayed correctly and at the best quality possible on your display.
 
 This repository contains 2 different plugins:
 
