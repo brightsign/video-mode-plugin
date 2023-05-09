@@ -11,6 +11,7 @@ Function setvideomode(videoModeInputs, bsp)
 	vm = CreateObject("roVideoMode")
 	sm = vm.GetScreenModes()
 
+  ' For using BrightAuthor:Connected, it is recommended that the fullres modifier be added to prevent the zones from scaling across the entire canvas.
 	sm[0].video_mode="3840x2160x29.97p:rblank:fullres"
 	sm[0].transform = "normal"
 	sm[0].display_x=0
