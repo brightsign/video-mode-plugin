@@ -1,5 +1,5 @@
 ' Multi Screens VideoMode Plugin Example
-' Plugin function name - setvideomode
+' Plugin function name - setVideoMode
 ' Plugin return type - As Object (array): see below example, it is plugin's responsibility to
 ' return the same format as GetScreenModes() returns. Then the presentation autorun will
 ' pick up your ScreenConfigList and set video modes for your screens.
@@ -8,9 +8,9 @@
 
 ' Minimum BrightAuthor:connected version: v1.11.0
 
-Function setvideomode(videoModeInputs, bsp) As Object
+Function setVideoMode(videoModeInputs, bsp) As Object
 
-  print "setvideomode_ForMultiScreens"
+  print "video mode plugin, Series 5: setVideoMode()"
   ' See details regarding multiScreen configuration -
   ' https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration
   vm = CreateObject("roVideoMode")
@@ -25,7 +25,6 @@ Function setvideomode(videoModeInputs, bsp) As Object
   sm[0].display_y = 0
   sm[0].enabled = true
 
-  
   ' Safeguard for models more than 2 HDMI outputs
   if (sm[1] <> invalid and Instr(0, sm[1].name, "HDMI") <> 0) then
     ' sm[1].name = "HDMI-2"

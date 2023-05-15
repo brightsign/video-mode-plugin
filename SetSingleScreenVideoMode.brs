@@ -6,9 +6,10 @@
 ' Note: This plugin assumes it is executed on BrightSign Model with a single HDMI output.
 ' This will NOT work on a BrightSign Model with multiple HDMI outputs.
 
-Function setvideomode(videoModeInputs, bsp) As String
+Function setVideoMode(videoModeInputs, bsp) As String
 
-  print "video mode plugin: setvideomode()"
+
+  print "video mode plugin, Series 4 or earlier: setVideoMode()"
 
   ' To customize the options of a supported video mode, use the format of the following return
   ' statement with the customized options.
