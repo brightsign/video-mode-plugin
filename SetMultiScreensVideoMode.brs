@@ -1,6 +1,6 @@
 ' Multi Screen VideoMode Plugin
 
-' Plugin function name - setVideoMode
+' Plugin function name - SetVideoMode
 ' Plugin return type - As Object (array): 
 ' Implementation Description - This function is intended to be used by BrightAuthor:connected or BrightAuthor, to 
 ' expose further video settings beyond the authoring applications. 
@@ -11,9 +11,9 @@
 
 ' Minimum BrightAuthor:connected version: v1.11.0
 
-Function setVideoMode(videoModeInputs, bsp) As Object
+Function SetVideoMode(videoModeInputs, bsp) As Object
 
-  print "video mode plugin, Series 5: setVideoMode()"
+  print "video mode plugin, Series 5: SetVideoMode()"
   ' See details regarding multiScreen configuration -
   ' https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration
   vm = CreateObject("roVideoMode")

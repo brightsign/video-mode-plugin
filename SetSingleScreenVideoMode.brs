@@ -1,5 +1,5 @@
 ' Single Screen VideoMode Plugin
-' Plugin function name - setVideoMode
+' Plugin function name - SetVideoMode
 ' Plugin return type - As String
 ' Implementation Description - This function is intended to be used by BrightAuthor:connected or BrightAuthor, to 
 ' expose further video settings beyond the authoring applications. 
@@ -10,9 +10,9 @@
 ' Note: This plugin assumes it is executed on BrightSign Model with a single HDMI output.
 ' This will NOT work on a BrightSign Model with multiple HDMI outputs.
 
-Function setVideoMode(videoModeInputs, bsp) As String
+Function SetVideoMode(videoModeInputs, bsp) As String
 
-  print "video mode plugin, Series 4 or earlier: setVideoMode()"
+  print "video mode plugin, Series 4 or earlier: SetVideoMode()"
   ' Example: manage the options of a supported video mode
   ' See options you can set - https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370672969/roVideoMode#roVideoMode-SetMode(modeAsString)AsBooleansetmode
   ' return "1920x1080x60p:rgb:fullrange"
