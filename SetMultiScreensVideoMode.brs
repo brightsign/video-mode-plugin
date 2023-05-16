@@ -1,10 +1,13 @@
-' Multi Screens VideoMode Plugin Example
-' Plugin function name - setVideoMode
-' Plugin return type - As Object (array): see below example, it is plugin's responsibility to
-' return the same format as GetScreenModes() returns. Then the presentation autorun will
-' pick up your ScreenConfigList and set video modes for your screens.
+' Multi Screen VideoMode Plugin
 
-' Note: This plugin assumes it is executed on BrightSign Model with Multiple HDMI outputs.
+' Plugin function name - setVideoMode
+' Plugin return type - As Object (array): 
+' Implementation Description - This function is intended to be used by BrightAuthor:connected or BrightAuthor, to 
+' expose further video settings beyond the authoring applications. 
+' The return string of this function will be directly passed to `SetVideoMode()` as the parameter. 
+
+' Note: This plugin assumes it is executed on a Series 5 BrightSign Model.
+' This could be used on Series 5 single screen models. 
 
 ' Minimum BrightAuthor:connected version: v1.11.0
 
