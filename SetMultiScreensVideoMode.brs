@@ -28,7 +28,7 @@ Function SetVideoMode(videoModeInputs, bsp) As Object
   sm[0].display_y = 0
   sm[0].enabled = true
 
-  ' Safeguard for models more than 2 HDMI outputs
+  ' Safeguard for models more than 1 HDMI outputs
   if (sm[1] <> invalid and Instr(0, sm[1].name, "HDMI") <> 0) then
     ' sm[1].name = "HDMI-2"
     ' sm[1].video_mode="1920x1080x29.97p:rblank:fullres"
