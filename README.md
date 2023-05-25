@@ -12,7 +12,7 @@ This repository contains 2 different plugins:
 
 1. Update SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs with your expected screens settings
 2. Add SetSingleScreenVideoMode.brs or SetMultiScreensVideoMode.brs to BrightAuthor or BrightAuthor:Connected (Presentation Settings > Support Content > Video Mode Plugin)
-
+3. Add the name of the function in the video mode plugin, this example initializes, `SetVideoMode` as the Function name. Plugin name is for user discretion.
 
 ## Supporting Resources
 Confluence: 
