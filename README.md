@@ -16,8 +16,8 @@ This repository contains 2 different plugins:
 
 ## Supporting Resources
 Confluence: 
-1. [MultiScreen VideoMode Configuration](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/1208025142/VideoMode+Multiscreen+Configuration)
-2. [Supported Video Modes](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370676833/Supported+Video+Modes)
+1. [MultiScreen VideoMode Configuration](https://docs.brightsign.biz/advanced/multiscreen-videomode)
+2. [Supported Video Modes](https://docs.brightsign.biz/advanced/video-modes)
 
 Alternative:
 1. You can also use Script Plugin and Plugin message feature to achieve setting videoMode, please see details: [BrightAuthor-Plugins/Set-Video-Mode] (https://github.com/brightsign/BrightAuthor-Plugins/tree/master/Set-Video-Mode)
